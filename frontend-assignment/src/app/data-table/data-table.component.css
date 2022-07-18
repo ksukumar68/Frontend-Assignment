@@ -71,13 +71,12 @@ table {
   .list-name{
     font-weight: 600;
   }
-  .common-grey-color{
+  .common-action{
     color: #D5D5D5;
     margin-right: 6%;
   }
 
   .custom-details{
-    
     background: linear-gradient(180deg,#fff 90%, #16597A 50%);
     font-weight: 600;
   }
@@ -92,6 +91,6 @@ table {
     color: #16597A;
     padding: 7px 10px 7px 10px;
 }
-  .add-description, .custom-details-old, .custom-grey-color:hover{
+  .add-description, .custom-details-old, .common-action:hover{
     cursor: pointer;
   }
