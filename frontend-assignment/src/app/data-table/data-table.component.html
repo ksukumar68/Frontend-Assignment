@@ -20,13 +20,15 @@
               <div fxFlex="100" class="action-list">
                   <mat-form-field appearance="outline">
                       <mat-label>Search</mat-label>
-                      <input matInput (keyup)="applyFilter($event)" placeholder="Example tes" #input>
+                      <input matInput 
+                      (keyup)="applyFilter($event)" 
+                      placeholder="Example tes" 
+                      #input>
                     </mat-form-field>
               </div>
           </div>
       </mat-card>
     </div>
-  
     
     <div fxLayout="row" >
       <mat-card fxFlex="80">
@@ -60,7 +62,10 @@
               <ng-container matColumnDef="details">
                   <th mat-header-cell *matHeaderCellDef> </th>
                   <td mat-cell  *matCellDef="let element" (click)="onSelectDetails(element.details, element.id)">
-                      <span [ngClass]="{'custom-details': element.id === selectedRowIndex}" class="custom-details-old">Details</span> 
+                      <span 
+                      [ngClass]="{'custom-details': element.id === selectedRowIndex}" 
+                      class="custom-details-old"
+                      >Details</span> 
                   </td>
                 </ng-container>
   
@@ -89,7 +94,6 @@
               </mat-paginator>
         </mat-card>
         <mat-card fxFlex="20" class="mainListCard">
-        
             <div class="no-description-div">
                 <p class="no-description-content">No description yet
                     <span class="add-description">
@@ -99,7 +103,11 @@
             </div>
             <div  class="listCard">
             <mat-list role="list">
-            <mat-list-item class="single-detail-list" role="listitem" *ngFor="let eachDetailsData of selectedDetails">{{eachDetailsData}}</mat-list-item>
+            <mat-list-item 
+            class="single-detail-list"
+             role="listitem" 
+            *ngFor="let eachDetailsData of selectedDetails"
+            >{{eachDetailsData}}</mat-list-item>
             </mat-list>
         </div>
         </mat-card>

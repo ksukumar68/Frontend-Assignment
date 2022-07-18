@@ -14,22 +14,24 @@ export class DataTableComponent implements OnInit {
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   selectedRowIndex: number = 0;
   selectedDetails: Array<string> = [];
+
   @ViewChild(MatPaginator, { static: true }) paginator!: MatPaginator;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  ngAfterViewInit() {
+  
+  ngAfterViewInit(): void {
     this.dataSource.paginator = this.paginator;
   }
 
-  applyFilter(event: Event) {
+  applyFilter(event: Event): void {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
-  onSelectDetails(detailsData: Array<string>, clickedId: number){
+  onSelectDetails(detailsData: Array<string>, clickedId: number): void{
     this.selectedDetails = detailsData;
     this.selectedRowIndex = clickedId;
   }
