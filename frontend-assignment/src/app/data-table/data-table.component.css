@@ -6,9 +6,6 @@ table {
     font-size: 14px;
   }
   .main-container{
-    /* display: flex;
-  flex-direction: column;
-  height: 100%; */
   overflow-y: scroll;
     height: 100%;
   }
@@ -17,11 +14,6 @@ table {
     width: 100%;
     height: 46px;
   }
-  
-  /* td, th {
-    width: 25%;
-  } */
-  /* .highlight { td { color: #FF0000;  } } */
 
   .highlight{
     color: white;
@@ -33,12 +25,10 @@ table {
   }
   .listCard{
     overflow-y: scroll;
-    /* max-height:calc(100% - 50px); */
     max-height: 557px !important;
   }
   .mainListCard{
     max-height: 630px !important;
-
   }
 
   .no-description-div{
@@ -62,10 +52,6 @@ table {
     font-weight: 600;
   }
 
-  /* .mat-raised-button{
-    background-color: #002B42 !important;
-    color: #fff;
-  } */
   .unselected-item{
     background-color: #F5F5F5 !important;
     height: 46px;
@@ -89,18 +75,13 @@ table {
     color: #D5D5D5;
     margin-right: 6%;
   }
-  .custom-grey-color:hover{
-    cursor: pointer;
-  }
+
   .custom-details{
-    /* padding: 7px 10px 7px 10px; */
     
     background: linear-gradient(180deg,#fff 90%, #16597A 50%);
     font-weight: 600;
   }
-  /* .action-list{
-    height: 46px;
-  } */
+
   .menu-card{
     padding:0;
   }
@@ -111,9 +92,6 @@ table {
     color: #16597A;
     padding: 7px 10px 7px 10px;
 }
-.custom-details-old:hover{
-    cursor: pointer
-  }
-  .add-description:hover{
+  .add-description, .custom-details-old, .custom-grey-color:hover{
     cursor: pointer;
   }
